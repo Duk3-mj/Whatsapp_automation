@@ -7,8 +7,6 @@ driver.get("https://web.whatsapp.com/")
 print('Please Scan the QR Code and press enter')
 input()
 f1 = open('chat','w')
-time.sleep(10)
-
 driver.find_element_by_css_selector("._2UaNq._2ko65").click()  # to select unread chat
 time.sleep(10)
 try:
