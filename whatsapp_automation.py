@@ -15,7 +15,7 @@ try:
     sachin = driver.find_elements_by_css_selector("._12pGw.EopGb")
 except NoSuchElementException:
     pass
-for i in range(len(sachin)):
+for i in range(17,len(sachin)):
     f1.writelines(sachin[i].text) # write chat in text file
     f1.write('\n')
 f1.close()
