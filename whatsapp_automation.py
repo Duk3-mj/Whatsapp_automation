@@ -11,7 +11,7 @@ try:
   driver.find_element_by_css_selector("._2UaNq._2ko65").click()  # to select unread chat
   time.sleep(10)
   sachin = driver.find_elements_by_css_selector("._12pGw.EopGb")
-  for i in range(17,len(sachin)):
+  for i in range(len(sachin)):
     f1.writelines(sachin[i].text) # write chat in text file
     f1.write('\n')
   f1.close()
