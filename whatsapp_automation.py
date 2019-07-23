@@ -18,6 +18,7 @@ try:
   f2 = open('chat','r')
   print(f2.read())
   f2.close()
+  driver.close()
 except NoSuchElementException:
   print("you have no new messages")
 
